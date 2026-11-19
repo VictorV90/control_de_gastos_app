@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores obligatorios -->
+    <color name="colorPrimary">#2E7D32</color> <!-- Verde oscuro institucional -->
+    <color name="colorPrimaryVariant">#1B5E20</color>
+    <color name="colorOnPrimary">#FFFFFFFF</color>
+
+
+    <!-- Colores funcionales para el Control de Gastos -->
+    <color name="fondo_pantalla">#F5F5F6</color>
+    <color name="fondo_tarjeta">#FFFFFF</color>
+    <color name="texto_principal">#212121</color>
+    <color name="texto_secundario">#757575</color>
+    <color name="color_ingreso">#388E3C</color> <!--Verde para ingresos -->
+    <color name="color_gasto">#D32F2F</color> <!-- Rojo para gastos -->
+
+
+</resources>

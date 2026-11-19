@@ -1,0 +1,35 @@
+<resources>
+    <!--Nombre real de la app-->
+    <string name="app_name">Control de Gastos</string>
+
+    <!-- Textos para la pantalla de Login -->
+    <string name="login_titulo">Bienvenido</string>
+    <string name="hint_correo">Correo Electrónico</string>
+    <string name="hint_contraseña">Contraseña</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="desc_logo">Logo de finanzas</string>
+
+    <string name="btn_ir_registro">¿No tienes cuenta? Regístrate</string>
+
+    <!-- Textos para la pantalla de Registro -->
+    <string name="registro_titulo">Crear cuenta</string>
+    <string name="hint_nombre">Nombre completo</string>
+    <string name="hint_repetir_contrasena">Repetir contraseña</string>
+    <string name="registro_pregunta_meta">¿Cuál es tu objetivo principal?</string>
+    <string name="rb_ahorrar">Ahorrar cada mes</string>
+    <string name="rb_reducir_gastos">Reducir gastos diarios</string>
+    <string name="rb_ordenar_presupuesto">Ordenar mi presupuesto</string>
+    <string name="chk_terminos">Acepto los términos y condiciones</string>
+    <string name="btn_registrar">Registrarse</string>
+
+
+    <!-- Textos para la pantalla de IA -->
+    <string name="ia_titulo">Asistente de Gastos IA</string>
+    <string name="ia_subtitulo">Escribe una consulta sobre tu presupuesto mensual</string>
+    <string name="hint_consulta_ia">Ej: ¿Cómo puedo reducir mis gastos diarios?</string>
+    <string name="btn_preguntar_ia">Preguntar a la IA</string>
+    <string name="ia_etiqueta_respuesta">Respuesta del asistente:</string>
+    <string name="ia_respuesta_ejemplo">Según tus registros de ejemplo de este mes, gastaste $85.000 en alimentación y $45.000 en transporte. Para ahorrar $25.000 mensuales, te sugiero planificar compras semanales y fijar un tope diario para gastos hormiga.</string>
+
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_pantalla"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp">
+
+        <!-- Título de la pantalla -->
+        <TextView
+            android:id="@+id/txtTituloIa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/ia_titulo"
+            android:textColor="@color/texto_principal"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Subtítulo descriptivo -->
+        <TextView
+            android:id="@+id/txtSubtituloIa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/ia_subtitulo"
+            android:textColor="@color/texto_principal"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTituloIa"
+            app:layout_constraintWidth_max="488dp" />
+
+        <!-- Campo para escribir la consulta -->
+        <EditText
+            android:id="@+id/edtConsultaIa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/fondo_tarjeta"
+            android:gravity="top|start"
+            android:hint="@string/hint_consulta_ia"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minHeight="110dp"
+            android:padding="12dp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_secundario"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSubtituloIa"
+            app:layout_constraintWidth_max="488dp" />
+
+        <!-- Botón para enviar la pregunta (reutilizando estilo propio) -->
+        <Button
+            android:id="@+id/btnPreguntarIa"
+            style="@style/BotonPrincipal"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_preguntar_ia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtConsultaIa"
+            app:layout_constraintWidth_max="320dp" />
+
+        <!-- Etiqueta del bloque de respuesta -->
+        <TextView
+            android:id="@+id/txtEtiquetaRespuesta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/ia_etiqueta_respuesta"
+            android:textColor="@color/texto_principal"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPreguntarIa"
+            app:layout_constraintWidth_max="488dp" />
+
+        <!-- Área de respuesta con texto de ejemplo -->
+        <TextView
+            android:id="@+id/txtRespuesta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/fondo_tarjeta"
+            android:lineSpacingExtra="4dp"
+            android:minHeight="150dp"
+            android:padding="16dp"
+            android:text="@string/ia_respuesta_ejemplo"
+            android:textColor="@color/texto_principal"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEtiquetaRespuesta"
+            app:layout_constraintWidth_max="488dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_pantalla"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp">
+
+        <!-- Título de Registro -->
+        <TextView
+            android:id="@+id/txtTituloRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/registro_titulo"
+            android:textColor="@color/texto_principal"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Campo Nombre -->
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:autofillHints="name"
+            android:background="@color/fondo_tarjeta"
+            android:hint="@string/hint_nombre"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_secundario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTituloRegistro"
+            app:layout_constraintWidth_max="488dp" />
+
+        <!-- Campo Correo -->
+        <EditText
+            android:id="@+id/edtCorreoRegistro"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints="emailAddress"
+            android:background="@color/fondo_tarjeta"
+            android:hint="@string/hint_correo"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_secundario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNombre"
+            app:layout_constraintWidth_max="488dp" />
+
+        <!-- Campo Contraseña -->
+        <EditText
+            android:id="@+id/edtContrasenaRegistro"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints="password"
+            android:background="@color/fondo_tarjeta"
+            android:hint="@string/hint_contraseña"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_secundario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtCorreoRegistro"
+            app:layout_constraintWidth_max="488dp" />
+
+        <!-- Campo Repetir Contraseña -->
+        <EditText
+            android:id="@+id/edtRepetirContrasena"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:autofillHints="password"
+            android:background="@color/fondo_tarjeta"
+            android:hint="@string/hint_repetir_contrasena"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_secundario"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtContrasenaRegistro"
+            app:layout_constraintWidth_max="488dp" />
+
+        <!-- Pregunta para el RadioGroup -->
+        <TextView
+            android:id="@+id/txtPreguntaMeta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/registro_pregunta_meta"
+            android:textColor="@color/texto_principal"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtRepetirContrasena"
+            app:layout_constraintWidth_max="488dp" />
+
+        <!-- RadioGroup con opciones de la app -->
+        <RadioGroup
+            android:id="@+id/rgObjetivo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPreguntaMeta"
+            app:layout_constraintWidth_max="488dp">
+
+            <RadioButton
+                android:id="@+id/rbAhorrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:minHeight="48dp"
+                android:text="@string/rb_ahorrar"
+                android:textColor="@color/texto_principal"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbReducirGastos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:minHeight="48dp"
+                android:text="@string/rb_reducir_gastos"
+                android:textColor="@color/texto_principal"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbOrdenarPresupuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:minHeight="48dp"
+                android:text="@string/rb_ordenar_presupuesto"
+                android:textColor="@color/texto_principal"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <!-- Casilla de Términos y Condiciones -->
+        <CheckBox
+            android:id="@+id/chkTerminos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:buttonTint="@color/colorPrimary"
+            android:minHeight="48dp"
+            android:text="@string/chk_terminos"
+            android:textColor="@color/texto_principal"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgObjetivo"
+             />
+
+        <!-- Botón Registrarse (reutilizando estilo propio) -->
+        <Button
+            android:id="@+id/btnRegistrar"
+            style="@style/BotonPrincipal"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/btn_registrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chkTerminos"
+            app:layout_constraintWidth_max="320dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
