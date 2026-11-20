@@ -31,5 +31,64 @@
     <string name="ia_etiqueta_respuesta">Respuesta del asistente:</string>
     <string name="ia_respuesta_ejemplo">Según tus registros de ejemplo de este mes, gastaste $85.000 en alimentación y $45.000 en transporte. Para ahorrar $25.000 mensuales, te sugiero planificar compras semanales y fijar un tope diario para gastos hormiga.</string>
 
+    <!-- ===== Parte Jairo: Lista, Agregar, Detalle ===== -->
+    <!-- Lista -->
+    <string name="titulo_lista">Mis gastos</string>
+    <string name="btn_agregar_gasto">Agregar</string>
+    <string name="btn_ir_ia">Asistente IA</string>
+    <string name="txt_total_mes">Total del mes: $82.140</string>
+    <string name="gasto1_nombre">Supermercado del barrio</string>
+    <string name="gasto1_categoria">Alimentación</string>
+    <string name="gasto1_fecha">03/11/2026</string>
+    <string name="gasto1_monto">$45.990</string>
+    <string name="gasto2_nombre">Pasaje de bus</string>
+    <string name="gasto2_categoria">Transporte</string>
+    <string name="gasto2_fecha">05/11/2026</string>
+    <string name="gasto2_monto">$1.250</string>
+    <string name="gasto3_nombre">Cuenta de la luz</string>
+    <string name="gasto3_categoria">Cuentas básicas</string>
+    <string name="gasto3_fecha">10/11/2026</string>
+    <string name="gasto3_monto">$28.400</string>
+    <string name="gasto4_nombre">Café con amigos</string>
+    <string name="gasto4_categoria">Ocio</string>
+    <string name="gasto4_fecha">14/11/2026</string>
+    <string name="gasto4_monto">$6.500</string>
 
+    <!-- Agregar -->
+    <string name="titulo_agregar">Nuevo gasto</string>
+    <string name="lbl_nombre_gasto">Descripción</string>
+    <string name="hint_nombre_gasto">Ej: Almuerzo en el trabajo</string>
+    <string name="lbl_monto">Monto (CLP)</string>
+    <string name="hint_monto">Ej: 5990</string>
+    <string name="lbl_fecha">Fecha</string>
+    <string name="hint_fecha">dd/mm/aaaa</string>
+    <string name="lbl_categoria">Categoría</string>
+    <string name="lbl_medio_pago">¿Cómo pagaste?</string>
+    <string name="rb_efectivo">Efectivo</string>
+    <string name="rb_debito">Débito</string>
+    <string name="rb_credito">Crédito</string>
+    <string name="lbl_nota">Nota (opcional)</string>
+    <string name="hint_nota">Ej: compra semanal</string>
+    <string name="btn_guardar_gasto">Guardar gasto</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string-array name="categorias">
+        <item>Alimentación</item>
+        <item>Transporte</item>
+        <item>Cuentas básicas</item>
+        <item>Ocio</item>
+        <item>Salud</item>
+        <item>Otros</item>
+    </string-array>
+
+    <!-- Detalle -->
+    <string name="titulo_detalle">Detalle del gasto</string>
+    <string name="lbl_medio_pago_detalle">Medio de pago</string>
+    <string name="lbl_nota_detalle">Nota</string>
+    <string name="lbl_estado">Estado</string>
+    <string name="detalle_medio_pago">Débito</string>
+    <string name="detalle_nota">Compra semanal de frutas, verduras y abarrotes.</string>
+    <string name="detalle_estado">Pendiente de revisar</string>
+    <string name="btn_editar_gasto">Editar</string>
+    <string name="btn_marcar_revisado">Marcar como revisado</string>
+    <string name="btn_eliminar_gasto">Eliminar gasto</string>
 </resources>
